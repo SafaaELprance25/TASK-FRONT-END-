@@ -1,0 +1,12 @@
+# Restaurant Menu Webpage
+
+This project is a responsive webpage that displays a restaurant menu with various categories.
+
+## Setup Instructions
+
+1. Clone the repository to your local machine.
+2. Open the `index.html` file in a web browser to view the webpage.
+
+## Project Explanation
+
+The webpage uses semantic HTML5 tags for structure, CSS3 for styling, and JavaScript for interactivity. The layout is managed using Flexbox, and the design is responsive to screen size changes.

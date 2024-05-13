@@ -1,0 +1,210 @@
+/* body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+.menu-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.category-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.category-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+}
+.category-btn:hover, .category-btn.active {
+  background-color: #333;
+  color: white;
+}
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.menu-item {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: calc(33% - 20px);
+  text-align: center;
+}
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 600px) {
+  .menu-items {
+    flex-direction: column;
+  }
+  .menu-item {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+ */
+ * {
+  box-sizing: border-box;
+}
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+.size-button {
+  font-size: 1em; /* يتغير حجم الخط بناءً على حجم الخط الأساسي للعنصر الأب */
+  padding: 0.5em 1em; /* تباعد داخلي متجاوب */
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+   border-radius: 50%;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}.search-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.search-container button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #333;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+  .search-container {
+    float: none;
+  }
+  .search-container input[type="text"], .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+}
