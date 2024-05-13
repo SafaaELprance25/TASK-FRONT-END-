@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Menu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+  <div id="myBtnContainer">
+    <div class="search-container">
+      <input type="text" placeholder="searchByName." name="search" id="searchInput">
+      <button onclick="searchByName()">searchByName</button>
+    </div>
+    
+      <button class="btn active" onclick="filterSelection('all')"> <img src="img_avatar.png class="chip" "> Show all</button>
+      <button class="btn" onclick="filterSelection('appetizers')"> <img src="images/caprese-salad.jpg" class="chip"> appetizers</button>
+      <button class="btn" onclick="filterSelection('main-courses')"> <img src="images/spaghetti-bolognese.jpg" class="chip" > main-courses</button>
+      <button class="btn" onclick="filterSelection('desserts')">  <img src="images/panna-cotta.jpg" class="chip" >desserts</button>
+      <button class="btn" onclick="filterSelection('beverages')">  <img src="images/mango-smoothie.jpg"class="chip" >beverages</button>
+
+    </div>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <!-- ... Other columns ... -->
+      
+      <div class="column appetizers">
+        <div class="content">
+          <img src="images/caprese-salad.jpg" alt="appetizers" style="width:100%">
+          <h4>Caprese Salad</h4>
+          <p>      description": "Fresh tomatoes, mozzarella, and basil.
+          </p>
+          <p><button onclick="addToCart('Forest')">Add to Cart</button></p>
+        </div>
+      </div>
+       <div class="column appetizers">
+        <div class="content">
+          <img src="images/nachos.jpg"
+         alt="appetizers" style="width:100%">
+          <h4>Nachos</h4>
+          <p>description": "Cheesy nachos with jalapeños and salsa.",</p>
+          <p><button onclick="addToCart('Forest')">Add to Cart</button></p>
+        </div>
+      </div>
+       <div class="column appetizers">
+        <div class="content">
+          <img src="images/bruschetta.jpg" alt="appetizers" style="width:100%">
+          <h4>Bruschetta</h4>
+          <p>description": "Grilled bread garlic, tomatoes, olive oil.",</p>
+          <p><button onclick="addToCart('Forest')">Add to Cart</button></p>
+        </div>
+      </div>
+      <!-- ... Other columns ... -->
+    </div>
+    <div class="row">
+      <!-- ... Other columns ... -->
+      
+      <div class="column 'main-courses">
+        <div class="content">
+          <img src="images/spaghetti-bolognese.jpg" alt="'main-courses" style="width:100%">
+          <h4>Spaghetti Bolognese</h4>
+          <p>description": "Classic spaghetti with meat sauce.</p>
+          <p><button onclick="addToCart('Forest')">Add to Cart</button></p>
+        </div>
+      </div>
+       <div class="column 'main-courses">
+        <div class="content">
+          <img src="images/vegetable-stir-fry.jpg" alt="'main-courses" style="width:100%">
+          <h4>Vegetable Stir Fry</h4>
+          <p>description": "Mixed vegetables stir-fried with tofu.</p>
+          <p><button onclick="addToCart('Forest')">Add to Cart</button></p>
+        </div>
+      </div>
+       <div class="column 'main-courses">
+        <div class="content">
+          <img src="images/grilled-salmon.jpg"
+        },alt="'main-courses" style="width:100%">
+          <h4>Grilled Salmon</h4>
+          <p>description": "Salmon fillet with a lemon herb seasoning.</p>
+          <p><button onclick="addToCart('Forest')">Add to Cart</button></p>
+        </div>
+      </div>
+      <!-- ... Other columns ... -->
+    </div>
+    <div class="row">
+      <!-- ... Other columns ... -->
+      
+      <div class="column desserts">
+        <div class="content">
+          <img src="/w3images/nature.jpg" alt="desserts" style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button onclick="addToCart('Forest')">Add to Cart</button></p>
+        </div>
+      </div>
+       <div class="column desserts">
+        <div class="content">
+          <img src="/w3images/nature.jpg" alt="desserts" style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button onclick="addToCart('Forest')">Add to Cart</button></p>
+        </div>
+      </div>
+       <div class="column desserts">
+        <div class="content">
+          <img src="/w3images/desserts.jpg" alt="desserts" style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+        <p class="price" style="font-size: 4vw;">$19.99</p> <!-- استخدام vw للسعر ليتغير مع حجم الشاشة -->
+              <div class="sizes">
+            <button class="size-button" data-size="S">S</button>
+            <button class="size-button" data-size="M">M</button>
+            <button class="size-button" data-size="L">L</button>
+          </div>
+          <p><button onclick="addToCart('Forest')">Add to Cart</button></p>
+        </div>
+      </div>
+      <!-- ... Other columns ... -->
+    </div>
+    <div class="row">
+      <!-- ... Other columns ... -->
+      
+      <div class="column beverages">
+        <div class="content">
+          <img src="/w3images/nature.jpg" alt="beverages" style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button onclick="addToCart('Forest')">Add to Cart</button></p>
+        </div>
+      </div>
+       <div class="column beverages">
+        <div class="content">
+          <img src="/w3images/nature.jpg" alt="beverages" style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button onclick="addToCart('Forest')">Add to Cart</button></p>
+        </div>
+      </div>
+       <div class="column beverages">
+        <div class="content">
+          <img src="/w3images/desserts.jpg" alt="beverages" style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+        <p class="price" style="font-size: 4vw;">$19.99</p> <!-- استخدام vw للسعر ليتغير مع حجم الشاشة -->
+              <div class="sizes">
+            <button class="size-button" data-size="S">S</button>
+            <button class="size-button" data-size="M">M</button>
+            <button class="size-button" data-size="L">L</button>
+          </div>
+          <p><button onclick="addToCart('Forest')">Add to Cart</button></p>
+        </div>
+      </div>
+      <!-- ... Other columns ... -->
+    </div>
+    <!-- قسم عرض السلة -->
+    <div id="cart">
+      <h2>سلة المشتريات</h2>
+      <ul id="cartItems"></ul>
+    </div>
+    
+    <!-- END MAIN -->
+    </div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
